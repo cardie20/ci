@@ -7,7 +7,7 @@ node('neptuno') {
   }
  
   stage('Configuration') {
-    echo "MY USER IS $USER"
+    echo "This $USER"
     sh "ls -l $WORKSPACE"
     sh "source $WORKSPACE/configure.sh"
     
