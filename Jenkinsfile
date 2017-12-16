@@ -20,7 +20,8 @@ node('neptuno') {
     sh "./test_hello_world.sh"
   }
   stage('Deploy') {
-    echo "HOLA"
+    sh "mkdir deploy"
+    sh "cp hello.py deploy/"
     
   }  
 
